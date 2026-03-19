@@ -7,4 +7,24 @@ body {
     height: 100vh;
     background: rgb(157, 24, 24);
 }
+.botao1::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: linear-gradient(45deg,transparent, #ff5500);
+    transition: 0.5s;
+
+}
+
+.botao1:hover::before{
+    left: 100%;
+}
+.botao1 i{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
 
